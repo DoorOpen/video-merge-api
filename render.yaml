@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: video-merge-api
+    env: python
+    buildCommand: ""
+    startCommand: python merge_api.py
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "true"
+    plan: free
